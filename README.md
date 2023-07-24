@@ -2,20 +2,20 @@
 Table of Contents
 Introduction
 
-##Purpose: 
+## Purpose: 
 The purpose of the e-commerce website backend is to serve as the backbone of the entire online shopping platform,
 handling essential operations and providing various functionalities to ensure a smooth and secure user experience. 
 The backend is designed to support the following key operations:
 
-1.User Authentication
+1. User Authentication
 
-2.Product Listing: It manages the comprehensive listing of products available on the website, providing details such as product title, description, price, images, categories, colors, and sizes.
+2. Product Listing: It manages the comprehensive listing of products available on the website, providing details such as product title, description, price, images, categories, colors, and sizes.
 
-3.Filtering Products: The backend allows users to filter products based on specific attributes such as color, size, and price range, helping them find their desired items more efficiently.
+3. Filtering Products: The backend allows users to filter products based on specific attributes such as color, size, and price range, helping them find their desired items more efficiently.
 
-4.Cart Management: Users can add products to their shopping cart, view the contents of their cart, and manage the quantity of products to be purchased.
+4. Cart Management: Users can add products to their shopping cart, view the contents of their cart, and manage the quantity of products to be purchased.
 
-5.Order Placement: Once users have selected the desired products, they can place orders for their selected items, specifying shipping and billing addresses, and providing payment details.
+5. Order Placement: Once users have selected the desired products, they can place orders for their selected items, specifying shipping and billing addresses, and providing payment details.
 
 6. Order Confirmation: After successfully placing an order, users can view the confirmation details of their orders, including order ID, shipping address, billing address, payment details, and the total price of the order.
 
