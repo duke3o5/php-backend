@@ -80,4 +80,79 @@ Endpoint:
 - GET /order/{orderId}: Fetches the details of a specific order using the orderId.
 
 
+## Database Schema:
 
+The database schema represents the structure of the database, including the tables, their relationships, and the fields with their corresponding data types. 
+In the e-commerce website backend, we have the following tables and relationships:
+
+1. Tables and Relationships:
+
+- Users Table:
+
+Fields:
+- id (Primary Key)
+- name (String)
+- email (String, Unique)
+- password (String)
+- created_at (Timestamp)
+- updated_at (Timestamp)
+  
+- Products Table:
+
+Fields:
+- id (Primary Key)
+- title (String)
+- description (Text)
+- price (Decimal)
+- image (String)
+- category (String)
+- color (String, Nullable)
+- size (String, Nullable)
+- created_at (Timestamp)
+- updated_at (Timestamp)
+
+-  Categories Table:
+ Fields:
+- id (Primary Key)
+- name (String)
+- created_at (Timestamp)
+- updated_at (Timestamp)
+Carts Table:
+
+Fields:
+- id (Primary Key)
+- user_id (Foreign Key to Users Table)
+- product_id (Foreign Key to Products Table)
+- quantity (Integer)
+- created_at (Timestamp)
+- updated_at (Timestamp)
+
+Orders Table:
+
+Fields:
+- id (Primary Key)
+- user_id (Foreign Key to Users Table)
+- shipping_address (String)
+- billing_address (String)
+- payment_details (String)
+- total_price (Decimal)
+- created_at (Timestamp)
+- updated_at (Timestamp)
+- 
+Order_Items Table:
+
+Fields:
+- id (Primary Key)
+- order_id (Foreign Key to Orders Table)
+- product_id (Foreign Key to Products Table)
+- quantity (Integer)
+- price (Decimal)
+- created_at (Timestamp)
+- updated_at (Timestamp)
+  
+## Relationships:
+
+One-to-Many Relationship: Users can have multiple carts, orders, and order items. Each cart, order, and order item belongs to a single user.
+
+Many-to-Many Relationship: Products can belong to multiple categories, and categories can have multiple products. 
+This relationship is facilitated by the "category_product" pivot table, which stores the product_id and category_id.
