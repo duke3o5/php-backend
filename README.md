@@ -22,16 +22,20 @@ The backend is designed to support the following key operations:
 
 
 
+## Authentication and Authorization
 
-User Registration and Login
-User Roles and Permissions
-Middleware for Authentication
-Products
 
-Displaying Products on the Home Page
-Fetching All Products
-Filtering Products by Category, Color, Size, and Price
-Adding Products to Cart
+- User Registration and Login
+- User Roles and Permissions
+- Middleware for Authentication
+
+  ## Products
+
+- Displaying Products on the Home Page
+- Fetching All Products
+- Filtering Products by Category, Color, Size, and Price
+- Adding Products to Cart
+
 Categories
 
 Displaying Categories
