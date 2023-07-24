@@ -55,7 +55,7 @@ Endpoints:
 - POST /login: Logs in an existing user with email and password, returning an authentication token.
 - POST /logout: Logs out the currently authenticated user by invalidating the token.
 
-## Product Listing
+Product Listing
 Endpoints:
 - GET /products: Retrieves a list of all products from the backend, including details such as id, title, description, price, image, category, color, and size.
 - GET /products/category/{categoryName}: Filters products by a specific categoryName.
