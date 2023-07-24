@@ -2,7 +2,7 @@
 
 ## Commands To run project
 - npm run dev ( should be running continuously)
-- php artiisan migrate (once to prepare tables)
+- php artisan migrate (once to prepare tables)
 - php artisan serve (To run php project )
 
 ## Purpose
