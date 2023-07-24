@@ -1,6 +1,9 @@
 ## E-Commerce Website Backend Documentation
 
-
+## Commands To run project
+-npm run dev
+-php artiisan migrate
+-php artisan serve
 
 ## Purpose
 The purpose of the e-commerce website backend is to serve as the backbone of the entire online shopping platform,
