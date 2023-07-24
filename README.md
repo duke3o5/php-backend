@@ -90,7 +90,7 @@ In the e-commerce website backend, we have the following tables and relationship
 
 1. Tables and Relationships:
 
-- Users Table:
+### Users Table:
 
 Fields:
 - id (Primary Key)
@@ -100,7 +100,7 @@ Fields:
 - created_at (Timestamp)
 - updated_at (Timestamp)
   
-- Products Table:
+### Products Table:
 
 Fields:
 - id (Primary Key)
@@ -114,13 +114,14 @@ Fields:
 - created_at (Timestamp)
 - updated_at (Timestamp)
 
--  Categories Table:
+### Categories Table:
  Fields:
 - id (Primary Key)
 - name (String)
 - created_at (Timestamp)
-- updated_at (Timestamp)
-Carts Table:
+- updated_at (Timestamp)\
+  
+### Carts Table:
 
 Fields:
 - id (Primary Key)
@@ -130,7 +131,7 @@ Fields:
 - created_at (Timestamp)
 - updated_at (Timestamp)
 
-Orders Table:
+### Orders Table:
 
 Fields:
 - id (Primary Key)
@@ -142,7 +143,7 @@ Fields:
 - created_at (Timestamp)
 - updated_at (Timestamp)
 - 
-Order_Items Table:
+### Order_Items Table:
 
 Fields:
 - id (Primary Key)
@@ -153,7 +154,7 @@ Fields:
 - created_at (Timestamp)
 - updated_at (Timestamp)
   
-## Relationships:
+2. Relationships:
 
 One-to-Many Relationship: Users can have multiple carts, orders, and order items. Each cart, order, and order item belongs to a single user.
 
