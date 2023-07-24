@@ -1,9 +1,9 @@
 ## E-Commerce Website Backend Documentation
 
 ## Commands To run project
-- npm run dev (should to running continuously)
-- php artiisan migrate
-- php artisan serve
+- npm run dev ( should be running continuously)
+- php artiisan migrate (once to prepare tables)
+- php artisan serve (To run php project )
 
 ## Purpose
 The purpose of the e-commerce website backend is to serve as the backbone of the entire online shopping platform,
