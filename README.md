@@ -1,6 +1,6 @@
 ## E-Commerce Website Backend Documentation
 
-Introduction
+
 
 ## Purpose
 The purpose of the e-commerce website backend is to serve as the backbone of the entire online shopping platform,
@@ -81,15 +81,3 @@ Endpoint:
 
 
 
-Common Issues and Solutions
-FAQs
-Additional Features
-
-Filtering Products by Color, Size, and Price
-Endpoint for Adding Products to Cart
-Endpoint for Placing Orders and Order Confirmation
-Routes
-List of All Endpoints with Description and Usage
-Conclusion
-Summary of the Backend Functionality
-Acknowledgments
