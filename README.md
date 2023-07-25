@@ -21,7 +21,14 @@ The backend is designed to support the following key operations:
 5. Order Placement
 
 6. Order Confirmation
+  
+7. Discount Management
 
+8.1 Create a New Discount
+8.2 Edit Existing Discounts
+8.3 Delete Discounts
+8.4 Apply Discounts to Products
+8.5 Apply Discounts to Categories
 
 
 
@@ -32,7 +39,7 @@ The backend is designed to support the following key operations:
 - User Roles and Permissions
 - Middleware for Authentication
 
-  ## Products
+## Products
 
 - Displaying Products on the Home Page
 - Fetching All Products
@@ -44,12 +51,20 @@ The backend is designed to support the following key operations:
 - Displaying Categories
 - Filtering Products by Category
 
- ## Order and Checkout
-
+## Order and Checkout
+- Apply Discounts
 - Placing an Order
 - Viewing Order Confirmation
 - Order Item Details
-- API Endpoints (if applicable)
+
+
+## Discount Pannal
+
+- Create a New Discount
+- Edit Existing Discounts
+- Delete Discounts
+- Apply Discounts to Products
+
 
 ## List of API Endpoints
 Authentication
@@ -73,7 +88,18 @@ Cart Management
 Endpoints:
 - POST /cart/{productId}: Adds a product to the user's cart with an optional quantity.
 - GET /cart: Fetches the contents of the user's cart.
-- 
+
+Discount Panel
+Endpoints:
+
+- POST/discounts: Create a new discount with details like discount name, value, type (percentage or fixed amount), start date, and end date.
+- PUT /discounts/{discountId}: Update an existing discount with new details like discount name, value, type, start date, and end date.
+- DELETE /discounts/{discountId}: Delete an existing discount.
+- POST /discounts/{discountId}/products: Apply the discount to specific products. The request should contain an array of product IDs to which the discount will be applied.
+- GET /discounts: Retrieve a list of all available discounts with their details.
+- GET /discounts/{discountId}: Retrieve the details of a specific discount.
+
+  
 Order Placement
 Endpoint:
 - POST /order: Places an order with required parameters shipping_address, billing_address, and payment_details.
@@ -153,6 +179,27 @@ Fields:
 - price (Decimal)
 - created_at (Timestamp)
 - updated_at (Timestamp)
+
+### Discounts Table:
+Fields:
+
+id (Primary Key)
+discount_name (String)
+discount_value (Decimal)
+discount_type (Enum: percentage, fixed_amount)
+start_date (Timestamp)
+end_date (Timestamp)
+created_at (Timestamp)
+updated_at (Timestamp)
+
+### Discount_Products Table:
+Fields:
+
+id (Primary Key)
+discount_id (Foreign Key to Discounts Table)
+product_id (Foreign Key to Products Table)
+created_at (Timestamp)
+updated_at (Timestamp)
   
 2. Relationships:
 
