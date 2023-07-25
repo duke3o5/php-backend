@@ -75,26 +75,25 @@ Endpoints:
 
 Filtering Products
 Endpoints:
-- GET /products?color={colorName}: Filters products by a specific colorName.
-- GET /products?size={sizeName}: Filters products by a specific sizeName.
-- GET /products?min_price={minPrice}&max_price={maxPrice}: Filters products within a specified price range.
+- GET /products/category/{categoryName}?color={colorName}: Filters products by a specific colorName.
+- GET /products/category/{categoryName}?size={sizeName}: Filters products by a specific sizeName.
+- GET /products/category/{categoryName}?min_price={minPrice}&max_price={maxPrice}: Filters products within a specified price range.
 
 Cart Management
 Endpoints:
 - POST /cart/{productId}: Adds a product to the user's cart with an optional quantity.
 - GET /cart: Fetches the contents of the user's cart.
+- delete /cart/{cartId}: delete product from cart.
+- patch /cart/{cartId}: edits cartItem quantity,color,size.
 
 Discount Panel
 Endpoints:
-
-- POST/discounts: Create a new discount with details like discount name, value, type (percentage or fixed amount), start date, and end date.
-- PUT /discounts/{discountId}: Update an existing discount with new details like discount name, value, type, start date, and end date.
+- GET /discounts: Retrieve a list of all available discounts with their details.
+- POST /discounts/create: Create a new discount with details like discount name, value, type (percentage or fixed amount), start date, and end date.
+- PUT /discounts/{discountId}/edit: Update an existing discount with new details like discount name, value, type, start date, and end date.
 - DELETE /discounts/{discountId}: Delete an existing discount.
 - POST /discounts/{discountId}/products: Apply the discount to specific products. The request should contain an array of product IDs to which the discount will be applied.
-- GET /discounts: Retrieve a list of all available discounts with their details.
-- GET /discounts/{discountId}: Retrieve the details of a specific discount.
 
-  
 Order Placement
 Endpoint:
 - POST /order: Places an order with required parameters shipping_address, billing_address, and payment_details.
