@@ -24,11 +24,6 @@ The backend is designed to support the following key operations:
   
 7. Discount Management
 
-8.1 Create a New Discount
-8.2 Edit Existing Discounts
-8.3 Delete Discounts
-8.4 Apply Discounts to Products
-8.5 Apply Discounts to Categories
 
 
 
