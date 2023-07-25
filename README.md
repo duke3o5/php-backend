@@ -183,27 +183,27 @@ Fields:
 ### Discounts Table:
 Fields:
 
-id (Primary Key)
-discount_name (String)
-discount_value (Decimal)
-discount_type (Enum: percentage, fixed_amount)
-start_date (Timestamp)
-end_date (Timestamp)
-created_at (Timestamp)
-updated_at (Timestamp)
+- id (Primary Key)
+- discount_name (String)
+- discount_value (Decimal)
+- discount_type (Enum: percentage, fixed_amount)
+- start_date (Timestamp)
+- end_date (Timestamp)
+- created_at (Timestamp)
+- updated_at (Timestamp)
 
 ### Discount_Products Table:
 Fields:
 
-id (Primary Key)
-discount_id (Foreign Key to Discounts Table)
-product_id (Foreign Key to Products Table)
-created_at (Timestamp)
-updated_at (Timestamp)
+- id (Primary Key)
+- discount_id (Foreign Key to Discounts Table)
+- product_id (Foreign Key to Products Table)
+- created_at (Timestamp)
+- updated_at (Timestamp)
   
 2. Relationships:
 
-One-to-Many Relationship: Users can have multiple carts, orders, and order items. Each cart, order, and order item belongs to a single user.
+- One-to-Many Relationship: Users can have multiple carts, orders, and order items. Each cart, order, and order item belongs to a single user.
 
-Many-to-Many Relationship: Products can belong to multiple categories, and categories can have multiple products. 
-This relationship is facilitated by the "category_product" pivot table, which stores the product_id and category_id.
+- Many-to-Many Relationship: Products can belong to multiple categories, and categories can have multiple products. 
+- This relationship is facilitated by the "category_product" pivot table, which stores the product_id and category_id.
